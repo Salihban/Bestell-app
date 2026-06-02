@@ -33,6 +33,7 @@
     background-image: url(./assets/img/landing-Hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 508px;
 
     img{
