@@ -29,21 +29,25 @@
     background: purple;
 }
 
-#landing{
+.landing{
     background-image: url(./assets/img/landing-Hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 508px;
+    max-width: 1440px;
 
     img{
         width: 200px;
         height: 200px;
         position: absolute;
         top: 80%;
-        right: 50%;
         z-index: 1;
     }
+}
+
+.burgerheader{
+    
 }
 
 
