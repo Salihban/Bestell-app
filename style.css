@@ -29,6 +29,13 @@
     background: purple;
 }
 
+#landing{
+    background-image: url(./assets/img/landing-Hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 508px;
+}
+
 
 main{
     width: 100%;
