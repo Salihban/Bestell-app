@@ -4,10 +4,10 @@ function init(){
 
 
 function renderBurger() {
-    let contentRef = getElementById("burgerCard");
+    let contentRef = document.getElementById("burgerCard");
     contentRef.innerHTML = "";
 
-    for (let i = 0; i < burgerCard.length; i++) {
+    for (let i = 0; i < burgerMenu.length; i++) {
         contentRef.innerHTML += getBurgerTemplate(burgerMenu[i]);
     }
 }
