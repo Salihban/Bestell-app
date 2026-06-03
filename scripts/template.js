@@ -1,13 +1,11 @@
-function getBurgerTemplate(i) {
+function getBurgerTemplate(burger) {
     return /*html*/`
-    <div class="content">
-        <div>
-            <img src="./assets/img/${burgerMenu[i]}.id" alt="">
-        </div>
-
-        <div>
-            <h3>${burgerMenu[i].name}</h3>
-        </div>
+    <div class="menu-card">
+        <img src="./assets/img/${burger.imge}" alt="${burger.name}">
+        <h3>${burger.name}</h3>
+        <p>${burger.description}</p>
+        <span>${burger.price}€</span>
+        <button>Add to basket</button>
     </div>
-    `
+    `;
 }
