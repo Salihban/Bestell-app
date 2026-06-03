@@ -29,22 +29,59 @@
     background: purple;
 }
 
+
 .landing{
+    height: 100%;
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+}
+
+.hero{
     background-image: url(./assets/img/landing-Hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 508px;
+    width: 100%;
     max-width: 1440px;
 
     img{
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        top: 80%;
-        z-index: 1;
+        position: relative;
+        top: 75%;
+        left: 35%;
     }
 }
+
+.landing_part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+    height: 300px;
+    width: 100%;
+}
+
+.underHero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+    width: 100%;
+}
+
+.hero-text{
+    font-size: 24px;
+}
+
+
 
 
 main{
@@ -59,9 +96,21 @@ section{
     .balken{
         height: 100px;
         width: 100%;
-        background: orange;
+        background: rgba(231, 108, 31, 1);
+        color: rgb(251, 248, 248);
         position: absolute;
         top: 0;
+        gap: 16px;
+        font-size: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        img{
+          coming soon
+        }
     }
 
     article{
@@ -71,7 +120,7 @@ section{
     }
 
     .menu-card{
-        width: 600px;
+        width: 800px;
         height: 400px;
         background: red;
         border: 1px white solid;
