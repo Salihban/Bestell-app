@@ -29,6 +29,22 @@
     background: purple;
 }
 
+header{
+    height: 8dvh;
+    width: 100%;
+    background: rgba(231, 108, 31, 1);
+}
+
+.headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 8px;
+    max-width: 1440px;
+    width: 90%;
+}
+
 /* region landing */
 .landing{
     height: 100%;
@@ -165,21 +181,7 @@ section, header, footer, aside{
     border: 2px white solid;
 }
 
-header{
-    height: 8dvh;
-    width: 100%;
-    background: rgba(231, 108, 31, 1);
-}
 
-.headline{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 8px;
-    max-width: 1440px;
-    width: 90%;
-}
 
 footer{
     height: 8dvh;
