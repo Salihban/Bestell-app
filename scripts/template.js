@@ -11,7 +11,7 @@ function getBurgerTemplate(burger) {
 
         <div class="menu-action">
         <span>${burger.price}€</span>
-        <button>Add to basket</button>
+        <button id="btn-cart" onclick="toggleCart()" >Add to basket</button>
         </div>
 
     </div>
