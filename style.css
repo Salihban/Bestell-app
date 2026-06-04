@@ -29,7 +29,7 @@
     background: purple;
 }
 
-
+/* region landing */
 .landing{
     height: 100%;
     max-width: 1440px;
@@ -80,7 +80,7 @@
 .hero-text{
     font-size: 24px;
 }
-
+/* regionend */
 
 
 
@@ -88,6 +88,26 @@ main{
     width: 100%;
 }
 
+
+.balken{
+    display: flex;
+    align-items: center;
+
+    color: whitesmoke;
+    background-color: rgba(231, 108, 31, 1);
+    gap: 16px;
+    font-size: 40px;
+    margin-top: 10px;
+
+    width: 100%;
+    height: 60px;
+    
+    img{
+        height: 88px;
+        width: 88px;
+        z-index: 10;
+        }
+}
 
 section{
     width: 100%;
