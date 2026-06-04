@@ -224,11 +224,12 @@ aside{
         justify-content: flex-end;
 
         #cart{
-            background: white;
-            height: 600px;
-            width: 20%;
+            background: rgba(54, 53, 52, 1);
+            height: 750px;
+            width: 435px;
             position: sticky;
             top: 0;
+            border-radius: 8px;
             border: 1px black solid;
         }
     }
