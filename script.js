@@ -42,5 +42,11 @@ function addTobasket(index) {
 }
 
 function renderBasket() {
-    
+    cartRef = document.getElementById("cart");
+
+    cartRef.innerHTML = "<h2>Your Basket</h2>";
+
+    for (let i = 0; i < basket.length; i++) {
+        cartRef.innerHTML += getBasketTemplate(basket[i]);
+    }
 }
