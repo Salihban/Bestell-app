@@ -11,7 +11,7 @@ function renderBurger() {
     contentRef.innerHTML = "";
 
     for (let i = 0; i < burgerMenu.length; i++) {
-        contentRef.innerHTML += getBurgerTemplate(burgerMenu[i]);
+        contentRef.innerHTML += getBurgerTemplate(burgerMenu[i], i);
     }
 }
 
