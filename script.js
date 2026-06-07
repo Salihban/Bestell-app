@@ -31,3 +31,16 @@ function renderSalad() {
         contentRef.innerHTML += getSaladTemplate(saladMenu[i]);
     }
 }
+
+
+let basket = [];
+
+function addTobasket(index) {
+    basket.push(burgerMenu[index]);
+
+    renderBasket();
+}
+
+function renderBasket() {
+    
+}
