@@ -57,3 +57,16 @@ function getSaladTemplate(salad) {
     </div>
     `;
 }
+
+
+function getBasketTemplate(item) {
+    return /*html*/`
+    <div>
+        <h4>${item.name}</h4>
+    </div>
+
+    <div>- 1 +</div>
+
+    <span>${item.price}€</span>
+    `;
+}
