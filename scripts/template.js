@@ -11,7 +11,7 @@ function getBurgerTemplate(burger) {
 
         <div class="menu-action">
         <span>${burger.price}€</span>
-        <button id="btn-cart" onclick="addTobasket()">Add to basket</button>
+        <button id="btn-cart" onclick="addToBasket()">Add to basket</button>
         </div>
 
     </div>
@@ -67,7 +67,7 @@ function getBasketTemplate(item) {
 
     <div>- 1 +</div>
 
-    <div><img src="Trash.svg" alt=""></div>
+    <div><img src="./assets/Trash.svg" alt=""></div>
 
     <span>${item.price}€</span>
     `;

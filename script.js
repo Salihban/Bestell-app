@@ -36,7 +36,7 @@ function renderSalad() {
 
 let basket = [];
 
-function addTobasket(index) {
+function addToBasket(index) {
     basket.push(burgerMenu[index]);
 
     renderBasket();
