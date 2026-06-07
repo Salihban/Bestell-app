@@ -1,4 +1,4 @@
-function getBurgerTemplate(burger) {
+function getBurgerTemplate(burger, index) {
     return /*html*/`
     <div class="menu-cards">
 
@@ -11,7 +11,7 @@ function getBurgerTemplate(burger) {
 
         <div class="menu-action">
         <span>${burger.price}€</span>
-        <button id="btn-cart" onclick="addToBasket()">Add to basket</button>
+        <button id="btn-cart" onclick="addToBasket(${index})">Add to basket</button>
         </div>
 
     </div>
