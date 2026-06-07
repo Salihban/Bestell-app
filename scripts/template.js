@@ -67,6 +67,8 @@ function getBasketTemplate(item) {
 
     <div>- 1 +</div>
 
+    <div><img src="Trash.svg" alt=""></div>
+
     <span>${item.price}€</span>
     `;
 }
