@@ -2,6 +2,7 @@ function init(){
     renderBurger();
     renderPizza();
     renderSalad();
+    renderBasket();
 }
 
 
@@ -49,4 +50,10 @@ function renderBasket() {
     for (let i = 0; i < basket.length; i++) {
         cartRef.innerHTML += getBasketTemplate(basket[i]);
     }
+}
+
+function deleteItem(index) {
+    basket.splice(index, 1);
+
+    renderBasket();
 }

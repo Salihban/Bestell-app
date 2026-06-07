@@ -184,6 +184,7 @@ section{
             border: 1px solid black;
             border-radius: 8px;
             background-color: rgba(231, 108, 31, 1);
+            cursor: pointer;
         }
     }
 }
@@ -225,12 +226,16 @@ aside{
 
         #cart{
             background: rgba(54, 53, 52, 1);
+            color: white;
             height: 750px;
             width: 435px;
             position: sticky;
             top: 0;
             border-radius: 8px;
             border: 1px black solid;
+
+            display: flex;
+            justify-content: center;
         }
     }
 }
