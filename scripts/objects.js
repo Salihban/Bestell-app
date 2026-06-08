@@ -1,4 +1,8 @@
-let burgerMenu = [
+const menuData = [
+{
+
+category:"Burger&Sandwiches", 
+items: [
     {
     id:"burger_01",
     name:"Veggie mushroom black burger",
@@ -26,11 +30,15 @@ let burgerMenu = [
     price: 15.90,
     description: "Chicken, Cheese, Tomatoes, Lettuce, Onion, Bell pepper",
     image: "img/big-chicken-burger.jpg"
-}
-];
+},
+],
+},
 
 
-let pizzaMenu = [
+{
+category:"Pizza (30cm)", 
+items: [
+    
 {
     id:"pizza_01",
     name:"Pizza Margherita",
@@ -58,11 +66,13 @@ let pizzaMenu = [
     price: 15.90,
     description: "Chicken, Mozzarella, Gorgonzola, Fontina,  Parmigiano Reggiano",
     image: "img/pizza-quattro.jpg"
-}
-];
+},
+],
+},
 
-
-let saladMenu = [
+{
+category:"Salad", 
+items: [
 {
     id:"salad_01",
     name:"Warm beef arugula salad",
@@ -90,5 +100,12 @@ let saladMenu = [
     price: 14.90,
     description: "Green salad, Cherry tomatoes, Cucumber, Baby spinach, Edamame, Radishes, Bittercress, Tofu, Peanuts",
     image: "img/vegan-salad.jpg"
-}
+},
+],
+},
+
 ];
+
+
+
+let basket = [];

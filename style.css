@@ -134,12 +134,6 @@ section{
         }
     }
 
-    article{
-        width: 60%;
-        height: auto;
-        background: orange;
-    }
-
     .menu-card{
         width: 900px;
         min-height: 140px;
@@ -212,17 +206,12 @@ footer{
 }
 
 
-
 aside{
     height: 100%;
-    width: 100%;
-    position: absolute;
+    width: 350px;
     top: 8dvh;
-    margin-top: 806px;
-
-    .content{
-        display: flex;
-        justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 
         #cart{
             background: rgba(54, 53, 52, 1);
@@ -231,11 +220,9 @@ aside{
             width: 435px;
             position: sticky;
             top: 0;
-            border-radius: 8px;
             border: 1px black solid;
 
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
         }
     }
-}
