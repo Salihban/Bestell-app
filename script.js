@@ -1,5 +1,5 @@
 function init(){
-
+renderMenu();
 }
 
 function renderMenu() {
@@ -11,7 +11,7 @@ renderSection("dish-section-Salad", 2);
 
 function renderSection(containerId, sectionIndex) {
     let contentRef = document.getElementById(containerId);
-    if (!container) return;
+    if (!contentRef) return;
     contentRef.innerHTML = "";
 
     const items = menuData[sectionIndex].items;

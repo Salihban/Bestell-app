@@ -1,9 +1,4 @@
 function getDishesTemplate(dish) {
-    const dishId = dish.id;
-    const dishName = dish.name;
-    const dishDescription = dish.description;
-    const dishPrice = dish.price;
-    const dishImage = dish.image;
     
     return /*html*/`
     <div class="menu-cards">
@@ -17,7 +12,7 @@ function getDishesTemplate(dish) {
 
         <div class="menu-action">
         <span>${dish.price}€</span>
-        <button class="btn-cart${burger.id}" onclick="addToBasket('${dishId}')">Add to basket</button>
+        <button class="btn-cart${dish.id}" onclick="addToBasket('${dish.id}')">Add to basket</button>
         </div>
 
     </div>
