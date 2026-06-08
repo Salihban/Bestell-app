@@ -1,4 +1,4 @@
-function getDishesTemplate(index) {
+function getDishesTemplate(dish) {
     const dishId = dish.id;
     const dishName = dish.name;
     const dishDescription = dish.description;

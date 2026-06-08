@@ -84,117 +84,25 @@ header{
 
 
 
-main{
-    width: 100%;
-}
-
-
-.balken{
+#main-container{
     display: flex;
-    align-items: center;
-
-    color: whitesmoke;
-    background-color: rgba(231, 108, 31, 1);
-    gap: 16px;
-    font-size: 40px;
-    padding: 0px 100px;
+    align-items: flex-start;
 
     width: 100%;
-    height: 60px;
-    
-    
-    img{
-        height: 88px;
-        width: 88px;
-        z-index: 10;
-        margin-top: -25px;
-        }
-}
+    gap: 40px;
+    padding: 0px 24px;
 
-section{
-    width: 100%;
-    height: auto;
-
-    .balken{
-        height: 60px;
-        width: 100%;
-        background: rgba(231, 108, 31, 1);
-        color: rgb(251, 248, 248);
-        position: absolute;
-        top: 0;
-        gap: 16px;
-        font-size: 40px;
-
+    #menu-dishes{
         display: flex;
-        align-items: center;
-
-        img{
-            height: 60px;
-            width: 88px;
-        }
-    }
-
-    .menu-card{
-        width: 900px;
-        min-height: 140px;
-        border: 1px white solid;
-
-        img{
-            width: 200px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    }
-
-    .menu-cards{
-        display: flex;
-        align-items: center;
-
-        gap: 24px;
-        padding: 16px 32px 32px 60px;
-        background-color: rgba(253, 234, 220, 1);
-        
-        .menu-info{
-            display: flex;
-            flex-direction: column;
-
-
-            width: 330px;
-            gap: 8px;
-        }
-
-        .menu-action{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
-
-            height: 100px;
-        }
-
-        button{
-            height: 24px;
-            border: 1px solid black;
-            border-radius: 8px;
-            background-color: rgba(231, 108, 31, 1);
-            cursor: pointer;
-        }
+        flex-direction: column;
+        flex: 1;
     }
 }
 
-section, header, footer, aside{
-    display: flex;
-    justify-content: center;
-}
 
-.content{
-    width: 100%;
-    max-width: 1440px;
-    height: calc(100dvh - 8dvh -8dvh);
-    /* background: black; */
-    border: 2px white solid;
-}
+
+
+
 
 footer{
     height: 8dvh;
