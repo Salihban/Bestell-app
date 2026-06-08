@@ -1,17 +1,23 @@
 function getDishesTemplate(index) {
+    const dishId = dish.id;
+    const dishName = dish.name;
+    const dishDescription = dish.description;
+    const dishPrice = dish.price;
+    const dishImage = dish.image;
+    
     return /*html*/`
     <div class="menu-cards">
 
-        <img src="./assets/${burger.image}" alt="${burger.name}">
+        <img src="./assets/${dish.image}" alt="${dish.name}">
 
         <div class="menu-info">
-        <h3>${burger.name}</h3>
-        <p>${burger.description}</p>
+        <h3>${dish.name}</h3>
+        <p>${dish.description}</p>
         </div>
 
         <div class="menu-action">
-        <span>${burger.price}€</span>
-        <button id="btn-cart${burger.id}" onclick="addToBasket(${index})">Add to basket</button>
+        <span>${dish.price}€</span>
+        <button class="btn-cart${burger.id}" onclick="addToBasket('${dishId}')">Add to basket</button>
         </div>
 
     </div>
