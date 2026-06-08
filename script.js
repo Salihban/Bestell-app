@@ -9,11 +9,13 @@ renderSection("dish-section-Salad", 2);
 }
 
 
-function renderSection() {
-    let contentRef = document.getElementById("menuData");
+function renderSection(containerId, sectionIndex) {
+    let contentRef = document.getElementById(containerId);
+    if (!container) return;
     contentRef.innerHTML = "";
 
-    for (let i = 0; i < burgerMenu.length; i++) {
-        contentRef.innerHTML += getDishesTemplate(menuData[i]);
+    const items = menuData[sectionIndex].items;
+    for (let i = 0; i < items.length; i++) {
+        contentRef.innerHTML += getDishesTemplate(items[i]);
     }
 }
