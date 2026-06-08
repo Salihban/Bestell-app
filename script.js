@@ -1,10 +1,13 @@
 function init(){
-    
-    
+
+}
+
+function renderMenu() {
+
 }
 
 
-function renderDishes() {
+function renderSection() {
     let contentRef = document.getElementById("menuData");
     contentRef.innerHTML = "";
 
