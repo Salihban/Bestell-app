@@ -3,7 +3,9 @@ function init(){
 }
 
 function renderMenu() {
-
+renderSection("dish-section-Burger", 0);
+renderSection("dish-section-Pizza", 1);
+renderSection("dish-section-Salad", 2);
 }
 
 
