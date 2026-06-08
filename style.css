@@ -102,7 +102,6 @@ header{
 .menu-card{
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     gap: 16px;
     margin-bottom: 32px;
@@ -150,6 +149,11 @@ box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
     object-fit: cover;
     border-radius: 8px;
     flex-shrink: 0;
+}
+
+.btn-cart{
+    border: 1px solid #e76c1f;
+    border-radius: 20px;
 }
 
 
