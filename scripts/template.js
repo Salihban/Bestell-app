@@ -11,34 +11,10 @@ function getDishesTemplate(dish) {
         </div>
 
         <div class="menu-action">
-        <span>${dish.price}€</span>
+        <span>${dish.price.toFixed(2)}€</span>
         <button class="btn-cart${dish.id}" onclick="addToBasket('${dish.id}')">Add to basket</button>
         </div>
 
     </div>
     `;
-}
-
-
-function getBasketTemplate(item, index) {
-    return /*html*/`
-    <section class="basket-wrapper">
-        <div >
-        <div class="close-btn-wrapper">
-            <button class="close-btn">X</button>
-        </div>
-        <h2>Your Basket</h2>
-        <div id="cart-content"></div>
-        <table>
-            <tbody>
-                <tr class="total">
-                    <td>Total</td>
-                    <td>00,00€</td>
-                </tr>
-            </tbody>
-        </table>
-        <button class="buy-btn">Buy Now</button>
-        </div>
-    </section>
-    `
 }
