@@ -57,7 +57,9 @@ function minusAmount (index) {
     renderBasket();
 }
 
-function deleteFromBasket(index) {
+function deleteFromBasket(id) {
+    let index = basket.findIndex(item => item.id === id);
+
     basket.splice(index, 1);
     renderBasket();
 }
