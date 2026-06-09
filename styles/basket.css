@@ -68,6 +68,7 @@ aside{
     display: flex;
     flex-direction: column;
 
+    border: 1px solid black;
     border-radius: 10px;
     background-color: #fdeadc;
     gap: 8px;
@@ -87,6 +88,6 @@ aside{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     margin-top: 4px;
 }
