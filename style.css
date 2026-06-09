@@ -91,6 +91,7 @@ header{
     width: 100%;
     gap: 40px;
     padding: 0px 24px;
+    max-width: 1440px;
 
     #menu-dishes{
         display: flex;
@@ -102,6 +103,7 @@ header{
 .menu-card{
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     gap: 16px;
     margin-bottom: 32px;
@@ -160,12 +162,13 @@ box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 
     gap: 16px;
     background-color: #e76c1f;
+    z-index: 3;
 }
 
 
 aside{
     height: 700px;
-    width: 470px;
+    width: 450px;
 
     position: sticky;
     top: 0;

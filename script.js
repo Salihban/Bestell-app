@@ -32,31 +32,20 @@ function renderBasket() {
     basketRef.innerHTML += getBasketTemplate();
 }
 
-function addToBasket(dishId) {
-    let foundDish = null;
-
-    for (let k = 0; k < menuData.length; k++) {
-    
-    let category = menuData[k];
-    let item = category.items.find(items => items.id === dishId);
-    if (item){
-    foundDish = item;
-    }
-    }
-
-    let foundInBasket = basket.find(item => item.id === dishId);
-
-    if (foundInBasket) {
-        foundInBasket.count++;
+function addDishToBasket(dishId) {
+    const dish = getDishById(dishId);
+    if (!dish) return;
+    const foundItem = basket.find((item) => item.id === dishId);
+    if (foundItem) {
+        foundItem.amount++;
     } else {
         basket.push({
-            id: foundDish.id,
-            name: foundDish.name,
-            price: foundDish.price,
-            count: 1
-        })
+            id: dish.id,
+            name: dish.name,
+            price: dish.price,
+            amount: 1,
+        });
     }
-
     renderBasket();
 }
 

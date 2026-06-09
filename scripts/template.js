@@ -11,29 +11,28 @@ function getDishesTemplate(dish) {
 
         <div class="menu-action">
         <span>${dish.price.toFixed(2)}€</span>
-        <button class="btn-cart${dish.id}" onclick="addToBasket('${dish.id}')">Add to basket</button>
+        <button class="btn-cart" onclick="addDishToBasket('${dish.id}')">Add to basket</button>
         </div>
 
     </div>
     `;
 }
 
-function getBasketTemplate(item, index) {
-    let totalItemPrice = item.price * item.count;
+function getBasketTemplate(items) {
 
     return /*html*/`
     <div class= "basket-item-card">
         <div class="item-card-header">
-            <span>${$item.name}</span>
-            <button onclick="deleteFromBasket(${index})">X</button>
+            <span class="basket-card-titel">${items.amount}X ${items.name}</span>
+            <button onclick="deleteFromBasket(${items.id})">🗑</button>
         </div>
         <div class="item-card-footer">
             <div>
-            <button onclick="minusAmount(${index})">-</button>
-            <span>${item.count}</span>
-            <button onclick="plusAmount(${index})">+</button>
+            <button onclick="minusAmount(${items.id})">-</button>
+            <span>${items.count}</span>
+            <button onclick="plusAmount(${items.id})">+</button>
             </div>
-            <span>${totalItemPrice.toFixed(2)}€</span>
+            <span>${items.Price.toFixed(2)}€</span>
         </div>
     </div>
     `
