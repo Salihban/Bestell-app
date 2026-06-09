@@ -18,20 +18,22 @@ function getDishesTemplate(dish) {
     `;
 }
 
-function getBasketTemplate(item) {
+function getBasketTemplate(item, index) {
+    let totalItemPrice = item.price * item.count;
+
     return /*html*/`
     <div class= "basket-item-card">
         <div class="item-card-header">
             <span>${$item.name}</span>
-            <button>X</button>
+            <button onclick="deleteFromBasket(${index})">X</button>
         </div>
         <div class="item-card-footer">
             <div>
-            <button>+</button>
-            <span>1</span>
-            <button>-</button>
+            <button onclick="minusAmount(${index})">-</button>
+            <span>${item.count}</span>
+            <button onclick="plusAmount(${index})">+</button>
             </div>
-            <span>${item.price}</span>
+            <span>${totalItemPrice.toFixed(2)}€</span>
         </div>
     </div>
     `
