@@ -78,12 +78,15 @@ aside{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     gap: 12px;
+    height: 48px;
 }
 
 .item-card-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     margin-top: 4px;
 }

@@ -23,7 +23,7 @@ function getBasketTemplate(items) {
     return /*html*/`
     <div class= "basket-item-card">
         <div class="item-card-header">
-            <span class="basket-card-titel">${items.amount}X ${items.name}</span>
+            <span class="basket-card-titel">${items.name}</span>
             <button onclick="deleteFromBasket(${items.id})">🗑</button>
         </div>
         <div class="item-card-footer">
