@@ -11,7 +11,7 @@ function getDishesTemplate(dish) {
 
         <div class="menu-action">
         <span>${dish.price.toFixed(2)}€</span>
-        <button class="btn-cart" onclick="addDishToBasket('${dish.id}')">Add to basket</button>
+        <button class="btn-cart" onclick="addToBasket('${dish.id}')">Add to basket</button>
         </div>
 
     </div>
@@ -32,7 +32,7 @@ function getBasketTemplate(items) {
             <span>${items.count}</span>
             <button onclick="plusAmount(${items.id})">+</button>
             </div>
-            <span>${items.Price.toFixed(2)}€</span>
+            <span>${items.price.toFixed(2)}€</span>
         </div>
     </div>
     `
