@@ -20,6 +20,13 @@ function renderSection(containerId, sectionIndex) {
     }
 }
 
-function addToBasket() {
-    
+function renderBasket() {
+    const basketEmpty = "";
+
+}
+
+function addToBasket(basketEmpty) {
+    if (basketEmpty  === "") {
+        basketEmpty = `<p>Your baket ist empty!</p>`
+    }
 }

@@ -19,7 +19,7 @@ function getDishesTemplate(dish) {
     `;
 }
 
-function getBasketTemplate() {
+function getBasketTemplate(item) {
     return /*html*/`
     <div class= "basket-item-card">
         <div class="item-card-header">
