@@ -28,7 +28,7 @@ function renderBasket() {
     for (let i = 0; i < basket.length; i++) {
         let item = basket[i];
     }
-    
+
     basketRef.innerHTML += getBasketTemplate();
 }
 
@@ -58,4 +58,13 @@ function addToBasket(dishId) {
     }
 
     renderBasket();
+}
+
+function plusAmount(index) {
+    basket[index].count++;
+    renderBasket();
+}
+
+function minusAmount (index) {
+    
 }
