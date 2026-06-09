@@ -73,3 +73,8 @@ function minusAmount (index) {
     }
     renderBasket();
 }
+
+function deleteFromBasket(index) {
+    basket.splice(index, 1);
+    renderBasket();
+}
