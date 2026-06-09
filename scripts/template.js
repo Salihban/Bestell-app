@@ -24,7 +24,15 @@ function getBasketTemplate() {
     <div class= "basket-item-card">
         <div class="item-card-header">
             <span>${$item.name}</span>
-            <button onclick="deletefromBasket()">X</button>
+            <button>X</button>
+        </div>
+        <div class="item-card-footer">
+            <div>
+            <button>+</button>
+            <span>1</span>
+            <button>-</button>
+            </div>
+            <span>price</span>
         </div>
     </div>
     `
