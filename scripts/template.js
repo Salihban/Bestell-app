@@ -1,5 +1,4 @@
 function getDishesTemplate(dish) {
-    
     return /*html*/`
     <div class="menu-cards">
 
@@ -12,7 +11,7 @@ function getDishesTemplate(dish) {
 
         <div class="menu-action">
         <span>${dish.price.toFixed(2)}€</span>
-        <button class="btn-cart${dish.id}" onclick="addToBasket()">Add to basket</button>
+        <button class="btn-cart${dish.id}" onclick="addToBasket('${dish.id}')">Add to basket</button>
         </div>
 
     </div>
@@ -32,7 +31,7 @@ function getBasketTemplate(item) {
             <span>1</span>
             <button>-</button>
             </div>
-            <span>price</span>
+            <span>${item.price}</span>
         </div>
     </div>
     `

@@ -1,5 +1,6 @@
 function init(){
 renderMenu();
+renderBasket();
 }
 
 function renderMenu() {
@@ -21,12 +22,25 @@ function renderSection(containerId, sectionIndex) {
 }
 
 function renderBasket() {
-    const basketEmpty = "";
+    
+
+
 
 }
 
 function addToBasket(basketEmpty) {
-    if (basketEmpty  === "") {
-        basketEmpty = `<p>Your baket ist empty!</p>`
+    let foundItem = basket.find((items) => items.id === dishId);
+
+    if (foundItem) {
+        foundItem.count++;
+    } else {
+        basket.push({
+            id: dish.id,
+            name: dish.name,
+            price: dish.price,
+            count: 1
+        })
     }
+    
+    renderBasket();
 }
