@@ -29,7 +29,7 @@ function getBasketTemplate(items) {
         <div class="item-card-footer">
             <div>
             <button onclick="minusAmount(${items.id})">-</button>
-            <span>${items.count}</span>
+            <span>${items.amount}</span>
             <button onclick="plusAmount(${items.id})">+</button>
             </div>
             <span>${items.price.toFixed(2)}€</span>

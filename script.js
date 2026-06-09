@@ -37,23 +37,16 @@ function addToBasket(id) {
     let foundItem = menuData[i].items.find(item => item.id === id);
 
     if (foundItem) {
-        basket.push(foundItem);
-    }
-}
-    renderBasket();
-}
+    
+    let basketItem = basket.find(item => item.id === id);
 
-function plusAmount(index) {
-    basket[index].count++;
-    renderBasket();
-}
-
-function minusAmount (index) {
-    if (basket[index].count > 1) {
-        basket[index].count--;
+    if (basketItem) {
+        basketItem.amount++;
     } else {
-        basket.splice(index, 1);
+        basket.push({id: foundItem, name: foundItem.name, price: foundItem.price, amount: 1});
     }
+    }
+}
     renderBasket();
 }
 
