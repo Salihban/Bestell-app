@@ -66,5 +66,10 @@ function plusAmount(index) {
 }
 
 function minusAmount (index) {
-    
+    if (basket[index].count > 1) {
+        basket[index].count--;
+    } else {
+        basket.splice(index, 1);
+    }
+    renderBasket();
 }
