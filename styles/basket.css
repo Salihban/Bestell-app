@@ -1,0 +1,89 @@
+aside{
+    height: 700px;
+    width: 450px;
+
+    position: sticky;
+    top: 0;
+
+    
+
+    border-radius: 20px 0px 0px 20px;
+    background: rgba(54, 53, 52, 1);
+    color: white;
+
+    .basket-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 650px;
+        width: 450px;
+    }
+
+    .basket-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+    font-size: 32px;
+    }
+
+    #basket-cart{
+        height: 380px;
+        width: 450px;
+
+        color: black;
+        border: 1px black solid;
+    }
+
+    .priceReport{
+        display: flex;
+        justify-content: space-between;
+
+        height: 100px;
+
+        .table-list{
+            width: 400px;
+        }
+    }
+
+    .btnBuyNow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 60px;
+        width: 300px;
+
+        font-size: 32px;
+        border-radius: 8px;
+        background-color: #e76c1f;
+    }
+}
+
+.basket-item-card{
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    background-color: #fdeadc;
+    gap: 8px;
+    padding: 14px 16px;
+}
+
+.item-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.item-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
