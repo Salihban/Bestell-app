@@ -19,3 +19,7 @@ function renderSection(containerId, sectionIndex) {
         contentRef.innerHTML += getDishesTemplate(items[i]);
     }
 }
+
+function addToBasket() {
+    
+}
