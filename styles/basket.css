@@ -97,8 +97,8 @@ aside{
     margin-top: 4px;
 }
 
-#order-dialog.d-none{
-    display: none;
+#order-dialog{
+    display: flex;
     flex-direction: column;
 
     margin: auto;
@@ -108,6 +108,12 @@ aside{
     width: 300px;
     height: 200px;
     background-color: rgba(54, 53, 52, 1);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
 
     .order-dialog-btn{
         display: flex;
@@ -148,3 +154,6 @@ aside{
     }
 }
 
+#order-dialog.d-none{
+    display: none;
+}
