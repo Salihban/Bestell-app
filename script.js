@@ -105,8 +105,7 @@ function buyNow() {
     if (basket.length === 0) {
         return;
     }
-    document.getElementById("order-dialog");
-    document.classList.remove("d-none");
+    document.getElementById("order-dialog").classList.remove("d-none");
 }
 
 function closeOrderDialog() {
@@ -115,6 +114,5 @@ function closeOrderDialog() {
     renderBasket();
     renderPrice();
 
-    document.getElementById("order-dialog");
-    document.classList.remove("d-none");
+    document.getElementById("order-dialog").classList.add("d-none");
 }
