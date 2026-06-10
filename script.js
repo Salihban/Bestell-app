@@ -31,6 +31,14 @@ function renderBasket() {
     }
 }
 
+function renderPrice() {
+    let subtotal = 0;
+    
+    for (let i = 0; i < basket.length; i++) {
+        subtotal += basket[i].price * basket[i].amount;
+    }
+}
+
 
 function addToBasket(id) {
     for (let i = 0; i < menuData.length; i++) {
