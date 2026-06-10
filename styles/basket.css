@@ -97,8 +97,8 @@ aside{
     margin-top: 4px;
 }
 
-#order-dialog{
-    display: fl;
+#order-dialog.d-none{
+    display: none;
     flex-direction: column;
 
     margin: auto;
@@ -146,13 +146,5 @@ aside{
         gap: 10px;
         color: white;
     }
-
-    .d-none{
-    display: none;
-}
-}
-
-.d-none{
-    display: none;
 }
 
