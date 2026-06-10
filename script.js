@@ -52,6 +52,24 @@ function addToBasket(id) {
     renderBasket();
 }
 
+function plusAmount(id) {
+    let basketItem = basket.find(item => item.id === id);
+
+    basketItem.amount++;
+    renderBasket();
+}
+
+function minusAmount(id) {
+    let basketItem = basket.find(item => item.id === id);
+
+    basketItem.amount--;
+
+    if (basketItem.amount <= 0) {
+        deleteFromBasket(id);
+    }
+    renderBasket();
+}
+
 function deleteFromBasket(id) {
     let index = basket.findIndex(item => item.id === id);
 
