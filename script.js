@@ -108,3 +108,13 @@ function buyNow() {
     document.getElementById("order-dialog");
     document.classList.remove("d-none");
 }
+
+function closeOrderDialog() {
+    basket = [];
+
+    renderBasket();
+    renderPrice();
+
+    document.getElementById("order-dialog");
+    document.classList.remove("d-none");
+}
