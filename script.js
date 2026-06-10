@@ -37,6 +37,17 @@ function renderPrice() {
     for (let i = 0; i < basket.length; i++) {
         subtotal += basket[i].price * basket[i].amount;
     }
+
+    const deliveryFee = 4.90;
+    let total = subtotal + deliveryFee;
+
+    document.getElementById("subtotal-price").innerHTML = subtotal.toFixed(2) + "€";
+    
+    document.getElementById("delivery-price").innerHTML = deliveryFee.toFixed(2) + "€";
+
+    document.getElementById("total-price").innerHTML = total.toFixed(2) + "€";
+
+    document.getElementById("buy-now-btn").innerHTML = `Buy now (${total.toFixed(2)}€)`;
 }
 
 
@@ -57,6 +68,7 @@ function addToBasket(id) {
     }
 }
     renderBasket();
+    renderPrice();
 }
 
 
@@ -65,6 +77,7 @@ function plusAmount(id) {
 
     basketItem.amount++;
     renderBasket();
+    renderPrice();
 }
 
 function minusAmount(id) {
@@ -76,6 +89,7 @@ function minusAmount(id) {
         deleteFromBasket(id);
     }
     renderBasket();
+    renderPrice();
 }
 
 
