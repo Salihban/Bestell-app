@@ -127,6 +127,10 @@ aside{
         border: 1px solid gray;
         border-radius: 50%;
         background-color: gray;
+
+        .btn-dialog{
+            cursor: pointer;
+        }
     }
 
     .order-dialog-img{
