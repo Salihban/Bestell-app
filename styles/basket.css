@@ -21,6 +21,10 @@ aside{
         width: 450px;
     }
 
+    #basket-cart{
+        overflow-y: auto;
+    }
+
     .basket-titel{
     display: flex;
     justify-content: center;
