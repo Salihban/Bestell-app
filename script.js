@@ -104,15 +104,16 @@ function deleteFromBasket(id) {
 function buyNow() {
     if (basket.length === 0) {
         return;
+    
+    const open = document.getElementById("order-dialog");
+    open.classList.remove("open-hidden");
     }
-    document.getElementById("order-dialog").classList.remove("d-none");
 }
 
 function closeOrderDialog() {
-    basket = [];
+    const open = document.getElementById("order-dialog");
 
-    renderBasket();
-    renderPrice();
-
-    document.getElementById("order-dialog").classList.add("d-none");
+    if (open) {
+        open.classList.add("d-none");
+    }
 }
