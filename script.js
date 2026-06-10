@@ -3,12 +3,12 @@ renderMenu();
 renderBasket();
 }
 
+
 function renderMenu() {
 renderSection("dish-section-Burger", 0);
 renderSection("dish-section-Pizza", 1);
 renderSection("dish-section-Salad", 2);
 }
-
 
 function renderSection(containerId, sectionIndex) {
     let contentRef = document.getElementById(containerId);
@@ -21,8 +21,6 @@ function renderSection(containerId, sectionIndex) {
     }
 }
 
-
-
 function renderBasket() {
     let basketRef = document.getElementById("basket-cart");
     basketRef.innerHTML = "";
@@ -32,6 +30,7 @@ function renderBasket() {
     basketRef.innerHTML += getBasketTemplate(basket[i]);
     }
 }
+
 
 function addToBasket(id) {
     for (let i = 0; i < menuData.length; i++) {
@@ -52,6 +51,7 @@ function addToBasket(id) {
     renderBasket();
 }
 
+
 function plusAmount(id) {
     let basketItem = basket.find(item => item.id === id);
 
@@ -69,6 +69,7 @@ function minusAmount(id) {
     }
     renderBasket();
 }
+
 
 function deleteFromBasket(id) {
     let index = basket.findIndex(item => item.id === id);
