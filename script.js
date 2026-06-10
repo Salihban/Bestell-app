@@ -21,6 +21,8 @@ function renderSection(containerId, sectionIndex) {
     }
 }
 
+
+
 function renderBasket() {
     let basketRef = document.getElementById("basket-cart");
     basketRef.innerHTML = "";
@@ -38,12 +40,12 @@ function addToBasket(id) {
 
     if (foundItem) {
     
-    let basketItem = basket.find(item => item.id === id);
+    let basketItem = basket.find(item => item.id === foundItem.id);
 
     if (basketItem) {
         basketItem.amount++;
     } else {
-        basket.push({id: foundItem, name: foundItem.name, price: foundItem.price, amount: 1});
+        basket.push({id: foundItem.id, name: foundItem.name, price: foundItem.price, amount: 1});
     }
     }
 }
