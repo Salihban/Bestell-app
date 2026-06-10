@@ -99,3 +99,12 @@ function deleteFromBasket(id) {
     basket.splice(index, 1);
     renderBasket();
 }
+
+
+function buyNow() {
+    if (basket.length === 0) {
+        return;
+    }
+    document.getElementById("order-dialog");
+    document.classList.remove("d-none");
+}
