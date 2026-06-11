@@ -182,7 +182,6 @@
 
     #mobil-navi{
         display: flex;
-        justify-content: space-around;
         align-items: center;
 
         position: fixed;
@@ -196,6 +195,7 @@
         background-color: rgba(54, 53, 52, 1);
         z-index: 9999;
         padding: 0px 16px;
+        gap: 80px;
 
         #mobil-navi button{
         flex: 1;
@@ -206,7 +206,6 @@
         background: none;
         border: none;
     }
-
 
     }
 
