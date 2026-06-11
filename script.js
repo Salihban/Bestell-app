@@ -69,6 +69,7 @@ function addToBasket(id) {
 }
     renderBasket();
     renderPrice();
+    updateMobilBasketCounter();
 }
 
 
@@ -78,6 +79,7 @@ function plusAmount(id) {
     basketItem.amount++;
     renderBasket();
     renderPrice();
+    updateMobilBasketCounter();
 }
 
 function minusAmount(id) {
@@ -90,6 +92,7 @@ function minusAmount(id) {
     }
     renderBasket();
     renderPrice();
+    updateMobilBasketCounter();
 }
 
 
@@ -98,6 +101,7 @@ function deleteFromBasket(id) {
 
     basket.splice(index, 1);
     renderBasket();
+    updateMobilBasketCounter();
 }
 
 
@@ -116,4 +120,23 @@ function closeOrderDialog() {
     basket = [];
     renderBasket();
     renderPrice();
+    updateMobilBasketCounter();
+}
+
+
+function updateMobilBasketCounter() {
+    let amount = 0;
+
+    for (let i = 0; i < basket.length; i++) {
+        amount += basket[i].amount;
+    }
+    document.getElementById("mobil-basket-counter").innerHTML = amount;
+}
+
+function openMobileBasket() {
+    document.getElementById("basket-aside").classList.add("basket-mobil-open");
+}
+
+function closeMobileBasket() {
+    document.getElementById("basket-aside").classList.remove("basket-mobil-open");
 }

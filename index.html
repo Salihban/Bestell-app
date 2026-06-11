@@ -54,10 +54,11 @@
                 </div>
                 <div id="dish-section-Salad" class="menu-card"></div>
             </section>
-            <aside>
+            <aside id="basket-aside">
                 <div class="basket-wrapper">
             <div class="basket-titel">
                 <h2>Your Basket</h2>
+                <div><button class="basket-titel-btn" onclick="closeMobileBasket()">X</button></div>
             </div>
             <div id="basket-cart"></div>
             <div class="priceReport">
@@ -97,8 +98,8 @@
             <button><img src="./assets/icons/home-icon-white.png" alt=""></button>
             <button><img src="./assets/icons/person-icon-white.png" alt=""></button>
             <button><img src="./assets/icons/orders.png" alt=""></button>
-            <button>
-                <div onclick="openMobileBasket()">
+            <button onclick="openMobileBasket()">
+                <div>
                 <img src="./assets/icons/shopping-cart-icon-white.png" alt=""></button>
                 <span id="mobil-basket-counter">0</span>
                 </div>
