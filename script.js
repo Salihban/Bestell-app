@@ -121,6 +121,7 @@ function closeOrderDialog() {
     renderBasket();
     renderPrice();
     updateMobilBasketCounter();
+    closeMobileBasket();
 }
 
 
