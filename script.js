@@ -38,9 +38,12 @@ function renderPrice() {
         subtotal += basket[i].price * basket[i].amount;
     }
 
-    const deliveryFee = 4.90;
-    let total = subtotal + deliveryFee;
+    let deliveryFee = 0;
+    if (basket.length > 0) {
+        deliveryFee = 4.90;
+    }
 
+    let total = subtotal + deliveryFee;
     document.getElementById("subtotal-price").innerHTML = subtotal.toFixed(2) + "€";
     
     document.getElementById("delivery-price").innerHTML = deliveryFee.toFixed(2) + "€";
@@ -101,6 +104,7 @@ function deleteFromBasket(id) {
 
     basket.splice(index, 1);
     renderBasket();
+    renderPrice();
     updateMobilBasketCounter();
 }
 
