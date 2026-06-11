@@ -205,7 +205,6 @@ box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
     margin-bottom: 50px;
 }
 
-
 footer{
     height: 8dvh;
     width: 100%;
@@ -223,4 +222,8 @@ footer{
         color: white;
         font-size: 24px;
     }
+}
+
+#mobil-navi{
+    display: none;
 }

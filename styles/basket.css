@@ -24,6 +24,21 @@ aside{
         overflow-y: auto;
     }
 
+    #basket-cart::-webkit-scrollbar {
+    width: 6px;
+    }
+    #basket-cart::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    }
+    #basket-cart::-webkit-scrollbar-thumb {
+    background: rgba(203, 85, 42, 0.835);
+    border-radius: 10px;
+    }
+    #basket-cart::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.778);
+    }
+
     .basket-titel{
     display: flex;
     justify-content: center;
