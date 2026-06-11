@@ -134,7 +134,7 @@ function updateMobilBasketCounter() {
 }
 
 function openMobileBasket() {
-    document.getElementById("basket-aside").classList.add("basket-mobil-open");
+    document.getElementById("basket-aside").classList.toggle("basket-mobil-open");
 }
 
 function closeMobileBasket() {
