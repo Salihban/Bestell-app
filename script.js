@@ -130,7 +130,7 @@ function updateMobilBasketCounter() {
     for (let i = 0; i < basket.length; i++) {
         amount += basket[i].amount;
     }
-    document.getElementById("mobil-basket-counter").innerHTML = amount;
+    document.getElementById("mobile-basket-counter").innerHTML = amount;
 }
 
 function openMobileBasket() {
